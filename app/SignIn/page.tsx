@@ -6,17 +6,17 @@ import Image from "next/image";
 function SignIn() {
   return (
     <div>
-      <div className="w-full lg[95%] max-w-[1440px] h-full  mt-16 ">
+      <div className="w-full lg[95%] max-w-[1440px] h-full mt-20 ">
         {/* Fixed duplicate w-full and adjusted height */}
-        <div className="container mx-auto ml-16 flex flex-col items-center text-center mb-40">
+        <div className=" mx-auto  flex flex-col items-center text-center mb-40 h-full ">
           {/* Center content horizontally and vertically */}
           <Link href="/">
             <Image
               src="/nike logo.png"
               alt="Nike Logo"
               width={200}
-              height={100}
-              className="cursor-pointer mb-8"
+              height={80}
+              className="cursor-pointer mb-8 "
               priority
             />
           </Link>
@@ -28,7 +28,7 @@ function SignIn() {
 
           {/* FORM */}
 
-          <div className="flex flex-col items-center  w-[389px]  justify-center min-h-screen bg-gray-100 p-4 mt-10">
+          <div className="flex flex-col items-center  w-[389px]  justify-center min-h-screen bg-gray-200 p-4 mt-10">
             {/* Main container */}
             <div className="w-full max-w-md space-y-8">
               {/* Form container */}

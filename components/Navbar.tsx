@@ -10,22 +10,23 @@ import { ModeToggle } from "./theme-button";
 function Navbar() {
   return (
     <nav className="w-full lg:w[95%] max-w[1440px] mx-auto shadow-sm fixed top-0 left-0 bg-opacity-30 backdrop-blur border-b z-30">
-      <div className="w-full h-10 flex justify-end gap-2 items-center">
-        <div className="flex items-center">
-          <Link href="/" className="flex  space-x-6 ml-8 ">
-            <Image
-              src="/air max logo.png"
-              alt="AirMax Logo"
-              width={24}
-              height={24}
-              className="cursor-pointer ml-10"
-            />
-          </Link>
-        </div>
-        <div className="flex justify-center mr-5 gap-2">
+      {/* <div className="w-full h-10 flex justify-end gap-2 items-center"> */}
+      <div className="flex items-center">
+        <Link href="/" className="flex justify-end ml-6 mt-2">
+          <Image
+            src="/air max logo.png"
+            alt="AirMax Logo"
+            width={30}
+            height={30}
+            className="cursor-pointer ml-8"
+          />
+        </Link>
+      </div>
+      <div className="w-full h-4 flex justify-end gap-2 items-center">
+        <div className="flex justify-center mr-4 mb-5 gap-2">
           <Link
             href="/"
-            className="text-black-700  hover:text-gray-900  transition-colors duration-300"
+            className="text-black-700 font-semibold hover:text-blue-900  transition-colors duration-300 hover:underline"
           >
             Home
           </Link>
@@ -34,7 +35,7 @@ function Navbar() {
 
           <Link
             href="/Product"
-            className="text-black-700  hover:text-gray-900  transition-colors duration-300"
+            className="text-black-700 font-semibold hover:text-blue-900  transition-colors duration-300 hover:underline"
           >
             Find a Store
           </Link>
@@ -43,34 +44,35 @@ function Navbar() {
 
           <Link
             href="/Help"
-            className="text-black-700 hover:text-gray-900 transition-colors duration-300"
+            className="text-black-700 font-semibold hover:text-blue-900 transition-colors duration-300 hover:underline"
           >
             Help
           </Link>
           <span className="mx-2 text-black-400">|</span>
           <Link
             href="/JoinUs"
-            className="text-black-700 hover:text-gray-900 transition-colors duration-300"
+            className="text-black-700 font-semibold hover:text-blue-900 transition-colors duration-300 hover:underline"
           >
             Join Us
           </Link>
           <span className="mx-2 text-black-400">|</span>
           <Link
             href="/SignIn"
-            className="text-black-700 hover:text-gray-900 transition-colors duration-300"
+            className="text-black-700 font-semibold hover:text-blue-900 transition-colors duration-300 hover:underline"
           >
             Sign In
           </Link>
         </div>
-
-        <ModeToggle />
+        <div className="mr-5 mb-8">
+          <ModeToggle />
+        </div>
       </div>
 
       {/* Second Part */}
 
       <div className="w-full lg:w[95%] max-w[1440px] mx-auto   ">
         <div className=" w-full flex justify-between bg-blue-200 rounded shadow-sm h-10">
-          <div className="flex items-center space-x-6 ml-8 ">
+          <div className="flex items-center space-x-6 ml-10 ">
             <Link href="/">
               <Image
                 src="/nike logo.png"

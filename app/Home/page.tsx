@@ -24,7 +24,7 @@ function HomePage() {
               alt="Nike Shoes"
               width={1344}
               height={597}
-              className="cursor-pointer"
+              className="cursor-pointer rounded"
               priority
             />
           </Link>
@@ -41,6 +41,7 @@ function HomePage() {
                 className="w-40 h-10 pl-4 pr-8 rounded-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               />
             </div>
+
             <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
               <IoIosArrowBack size={24} />
             </button>
@@ -51,9 +52,9 @@ function HomePage() {
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 ">
           {/* Product 1 */}
-          <div className="product-card">
+          <div className="product-card shadow-xl">
             <Link href="/">
               <Image
                 src="/nike-3.png"
@@ -63,16 +64,16 @@ function HomePage() {
                 className="cursor-pointer w-full"
                 priority
               />
-              <div className="flex justify-between ">
-                <h2 className="font-bold mt-4">Nike Air Max Pulse</h2>
-                <h2 className=" flex justify-end mt-4  ">₹ 13 995</h2>
+              <div className="flex justify-between  ">
+                <h2 className="font-bold mt-4 ml-4">Nike Air Max Pulse</h2>
+                <h2 className=" flex justify-end mt-4 mr-4 ">₹ 13 995</h2>
               </div>
-              <p className="text-gray-700">Mens Shoes</p>
+              <p className="text-gray-700 ml-4">Mens Shoes</p>
             </Link>
           </div>
 
           {/* Product 2 */}
-          <div className="product-card">
+          <div className="product-card shadow-xl">
             <Link href="/">
               <Image
                 src="/nike-5.png"
@@ -83,16 +84,16 @@ function HomePage() {
                 priority
               />
 
-              <div className="flex justify-between ">
-                <h2 className="font-bold  mt-4">Nike Air Max Pulse</h2>
-                <h2 className=" flex justify-end mt-4">₹ 13 995</h2>
+              <div className="flex justify-between  ">
+                <h2 className="font-bold  mt-4 ml-4">Nike Air Max Pulse</h2>
+                <h2 className=" flex justify-end mt-4 mr-4">₹ 13 995</h2>
               </div>
-              <p className="text-gray-700">Womens Shoes</p>
+              <p className="text-gray-700 ml-4">Womens Shoes</p>
             </Link>
           </div>
 
           {/* Product 3 */}
-          <div className="product-card">
+          <div className="product-card shadow-xl">
             <Link href="/">
               <Image
                 src="/nike-3.png"
@@ -102,11 +103,11 @@ function HomePage() {
                 className="cursor-pointer w-full"
                 priority
               />
-              <div className="flex justify-between">
-                <h2 className="font-bold  mt-4">Nike Air Max 97 SE</h2>
-                <h2 className=" flex justify-end mt-4">₹ 13 995</h2>
+              <div className="flex justify-between ">
+                <h2 className="font-bold  mt-4 ml-4">Nike Air Max 97 SE</h2>
+                <h2 className=" flex justify-end mt-4 mr-4">₹ 13 995</h2>
               </div>
-              <p className="text-gray-700">Mens Shoes</p>
+              <p className="text-gray-600 ml-4">Mens Shoes</p>
             </Link>
           </div>
         </div>
